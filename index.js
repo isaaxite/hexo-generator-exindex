@@ -11,6 +11,11 @@ hexo.config.exindex_generator = assign({
 }, hexo.config.exindex_generator);
 
 hexo.extend.generator.register('exindex_generator', function(locals) {
-  const ret = generator.call(this, locals);
-  return ret;
+  const enableConf = hexo.config.exindex_generator_enable;
+  const isEnable = typeof enableConf === 'undefined' ? true : enableConf;
+  if (isEnable) {
+    // console.info('Hello hexo-generator-exindex!');
+    return generator.call(this, locals);
+  }
+  return locals;
 });

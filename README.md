@@ -66,8 +66,36 @@ Add or modify the following section to your root _config.yml file
 
 ```yml
 exindex_generator_enable: true
+exindex_generator:
+  path: ''
+  per_page: 10
+  order_by: -date
+  pin_top:
+    tags: topping
+  pin_bottom:
+    tags: bottoming # exclude article which tag is Hexo, exp tags: <tag1>[,<tag2>,...]
 ```
 
+- **exindex_generator_enable**: on or off this plugins.
+- **path**: Root path for your blog's index page. 
+  - default: ""
+- **per_page**: Posts displayed per page.
+  - default: [`config.per_page`](https://hexo.io/docs/configuration.html#Pagination) as specified in the official Hexo docs (if present), otherwise `10`
+  - `0` disables pagination
+- **order_by**: Posts order. 
+  - default: date descending
+- **pagination_dir**: URL format.
+  - default: 'page'
+  - `awesome-page` makes the URL ends with 'awesome-page/<page number>' for second page and beyond.
+- **pin_top**: Bring the article to the top.
+  - default: ""
+  - `tags`: `<tag1>[,<tag2>,...]`, you need to set these tags at fron-matter!
+- **pin_bottom**: Bring the article to the bottom.
+  - default: ""
+  - `tags`: `<tag1>[,<tag2>,...]`
+- **exclude**: Hide corresponding articles through tags.
+  - default: ""
+  - `tags`: `<tag1>[,<tag2>,...]`
 
 # License
 
