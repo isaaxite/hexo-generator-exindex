@@ -11,6 +11,15 @@
 
 Extenp hexo-generator-index to provide topping and hiding specified articles on the homepage through specified tags.
 
+# Installation
+
+```shell
+npm install hexo-generator-exindex --save
+npm uninstall hexo-generator-index --save
+```
+
+**Hint:** If you have install `hexo-generator-index`, for avoiding conflict, you should unintall it.
+
 # Feature
 
 - include all of `hexo-generator-index` feat
