@@ -23,6 +23,7 @@
   "author": "isaaxite",
   "license": "MIT",
   "dependencies": {
+    "hexo-pagination": "^3.0.0",
     "object-assign": "^4.1.1"
   }
 }
