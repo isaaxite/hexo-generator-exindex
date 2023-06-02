@@ -1,8 +1,18 @@
 # hexo-generator-exindex
 
+[![license](https://img.shields.io/bower/l/MI)](https://github.com/isaaxite/hexo-generator-exindex/blob/main/LICENSE)
+![version](https://img.shields.io/github/package-json/v/isaaxite/hexo-generator-exindex)
+![languages-count](https://img.shields.io/github/languages/count/isaaxite/hexo-generator-exindex)
+![code-size](https://img.shields.io/github/languages/code-size/isaaxite/hexo-generator-exindex)
+![last-commit](https://img.shields.io/github/last-commit/isaaxite/hexo-generator-exindex)
+
+
 Extenp hexo-generator-index to provide topping and hiding specified articles on the homepage through specified tags.
 
 # Feature
+
+- Pin-top
+- Hide specified articles
 
 ## Pin-top
 
