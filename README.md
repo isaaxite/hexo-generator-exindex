@@ -13,52 +13,66 @@ Extenp hexo-generator-index to provide topping and hiding specified articles on 
 
 # Feature
 
+- include all of `hexo-generator-index` feat
 - Pin-top
-- Hide specified articles
+- pin-bottom
+- exclude
 
-## Pin-top
+## Config
 
-You can pin-top a article by setting the tag of front-matter.That's acticle will display in your homepage's list topest.
-
-```yml
----
-title: How Diff-Algorithm work in VUE
-date: 2019-12-26 08:41:47
-tags:
-- vue
-top: true
----
-```
-
-## Hide specified articles
-
-You can hide a specified articles by hexo-tag in front-matter and config hidding tag in root `_config.yml`.
-
-
-First, config `_config.yml` like that:
+The following is an example of a complete configuration.
 
 ```yml
-# the custom index2 generator, can be array or object
+exindex_generator_enable: true
 exindex_generator:
+  path: ''
+  per_page: 10
+  order_by: -date
+  pagination_dir: page
+  pin_top:
+    tags: topping1,topping2
+  pin_bottom:
+    tags: bottoming1,bottoming2
   exclude:
-    - tag hidden # exclude article which tag is Hexo
+    tags: hidden1,hidden2
 ```
 
-Then, set a `hidden` tag
+## pin-top
+
+Setting front-matter tags which you set in root _config.yml like that:
 
 ```yml
 ---
-title: C1科目二
+title: Isaac Blog
 tags:
-  - C1驾驶证
-  - hidden
-categories:
-  - C1科目二
+  - topping1
 date: 2023-04-11 18:19:51
 ---
 ```
 
-Finally, you will find that this article has disappeared from your homepage.
+## pin-bottom
+
+```yml
+---
+title: Isaac Blog
+tags:
+  - bottoming1
+date: 2023-04-11 18:19:51
+---
+```
+
+**Hint:** When pin-top and pin-bottom appear simultaneously, the latter has a higher priority.
+
+## exclude
+
+```yml
+---
+title: Isaac Blog
+tags:
+  - hidden1
+date: 2023-04-11 18:19:51
+---
+```
 
 # Options
 
@@ -70,6 +84,7 @@ exindex_generator:
   path: ''
   per_page: 10
   order_by: -date
+  pagination_dir: page
   pin_top:
     tags: topping
   pin_bottom:
