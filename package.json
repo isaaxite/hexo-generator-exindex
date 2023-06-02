@@ -1,6 +1,6 @@
 {
   "name": "hexo-generator-exindex",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Extenp hexo-generator-index to provide topping and hiding specified articles on the homepage through specified tags.",
   "main": "index.js",
   "scripts": {
