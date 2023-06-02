@@ -13,6 +13,13 @@
     "lib",
     "index.js"
   ],
+  "engines": {
+    "node": ">= 0.10.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/isaaxite/hexo-generator-exindex.git"
+  },
   "keywords": [
     "pin",
     "top",
@@ -22,6 +29,10 @@
   ],
   "author": "isaaxite",
   "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/isaaxite/hexo-generator-exindex/issues"
+  },
+  "homepage": "https://github.com/isaaxite/hexo-generator-exindex#readme",
   "dependencies": {
     "hexo-pagination": "^3.0.0",
     "object-assign": "^4.1.1"
