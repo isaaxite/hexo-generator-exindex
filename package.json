@@ -1,0 +1,28 @@
+{
+  "name": "hexo-generator-exindex",
+  "version": "1.0.0",
+  "description": "Extenp hexo-generator-index to provide topping and hiding specified articles on the homepage through specified tags.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "directories": {
+    "lib": "./lib"
+  },
+  "files": [
+    "lib",
+    "index.js"
+  ],
+  "keywords": [
+    "pin",
+    "top",
+    "hidden",
+    "hexo",
+    "generator"
+  ],
+  "author": "isaaxite",
+  "license": "MIT",
+  "dependencies": {
+    "object-assign": "^4.1.1"
+  }
+}
